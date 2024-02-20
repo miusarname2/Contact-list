@@ -30,7 +30,7 @@ router.put("/:id", async (req, res) => {
 
 router.delete("/:id", async (req, res) => {
   await Contact.findByIdAndRemove(req.params.id);
-  res.json({ status: "remove..." });
+  res.json({ status: "remove..." })
 });
 
 module.exports = router;
